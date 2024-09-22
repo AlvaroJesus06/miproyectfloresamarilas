@@ -13,6 +13,73 @@ body {
   justify-content: center;
   background-color: black;
 }
+/* Añadir al final de style.css */
+.mensaje-lateral {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #fbff00; /* Amarillo para coincidir con tu esquema de colores */
+  font-family: "Poppins", cursive;
+  font-size: 24px;
+  text-shadow: 0 0 12px #fbff00, 0 0 50px #fbff00, 0 0 100px #fbff00; /* Efecto de resplandor similar a tus otros elementos */
+  max-width: 40%;
+  z-index: 1000;
+  animation: glow 2.5s ease-in-out infinite; /* Animación de brillo similar a tus otros elementos */
+}
+
+.mensaje-lateral h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.mensaje-lateral p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 574px) {
+  .mensaje-lateral {
+    font-size: 18px;
+    left: 2%;
+    max-width: 60%;
+  }
+
+  .mensaje-lateral h2 {
+    font-size: 1.5rem;
+  }
+
+  .mensaje-lateral p {
+    font-size: 1rem;
+  }
+}
+/* Estilo para centrar el mensaje y evitar que se desborde */
+.center-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 15px; /* Ajusta el tamaño del texto */
+  color: white; /* Color del texto */
+  max-width: 69%; /* Limita el ancho del texto para que no se desborde */
+  margin: 0 auto; /* Centra el contenedor del texto */
+  line-height: 1.5; /* Ajusta la altura de línea para mejorar la legibilidad */
+}
+
+.center-message p {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente si deseas */
+  padding: 1px;
+  border-radius: 1px; /* Bordes redondeados para un mejor efecto */
+}
+
+.description {
+  text-align: center; /* Centra el texto */
+  color: yellow; /* Mantén el color amarillo */
+  font-size: 1px; /* Tamaño del texto, ajusta según prefieras */
+  margin-top: 20px; /* Espacio superior para separarlo de otros elementos */
+  max-width: 80%; /* Limita el ancho para evitar que se desborde */
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .greetings {
   font-size: 6rem;
@@ -69,7 +136,7 @@ body {
   }
 
   .button a {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -82,7 +149,7 @@ body {
   background-color: yellow; /* Fondo amarillo */
   border: none; /* Sin bordes */
   padding: 10px 20px; /* Ajusta el relleno según tu preferencia */
-  font-size: 18px; /* Tamaño de fuente */
+  font-size: 22px; /* Tamaño de fuente */
   cursor: pointer;
   position: relative; /* Necesario para el resplandor */
   border-radius: 20px; /* Esquinas redondeadas */
